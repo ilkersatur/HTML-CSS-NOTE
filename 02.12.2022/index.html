@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        h1{
+            color: orange; /* Selector(Seçiciler) */
+        }
+        .ozel{
+                    /* class kullanımı */
+            color: blueviolet;
+        }
+        #tek{
+            color: green; /* id kullanımı*/
+        }
+        h2,h3{
+            color: rgb(215, 226, 3); /*h2 ve h3 etiketlerine aynı stili uygula*/
+        }
+        /*kutu stili içerisindeki tüm h1 lere uygula, seviye farkı olmadan*/
+        .kutu h1{
+            color: rgb(249, 24, 8); /*kutunun içerisindeki h1 e uygula*/
+        }
+        .kutu> h1{ /*aynı seviyedeki çocuklara uygula*/
+            color: rgb(0, 0, 0); 
+        }
+        .kutu ~ h1{ /* kutunun sonraki tüm h1 lere uygula*/
+            color: rgb(255, 0, 204); 
+        }
+        .kutu + h1{ /* kutudan sonraki ilk h1 e uygula*/
+            color: brown;
+        }
+        tr:nth-child(2n){
+            background-color: lightblue;
+        }
+        tr:nth-child(2n+1){
+            background-color: lightyellow;
+        }
+        tr:first-of-type{
+            background-color:aqua;
+        }
+        tr:nth-child(3){
+            background-color: rgb(142, 143, 216);
+        }
+        #box{
+            background-color: darkcyan;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color:blue ;">Merhaba</h1> <!--tag içerisine yazma daha baskın olduğu için mavi olarak kalacaktır-->
+    <h1>Merhaba</h1>
+    <h1 class="ozel">Merhaba</h1>
+    <h1>Merhaba</h1>
+    <h1>Merhaba</h1>
+    <h1 id="tek">Merhaba</h1>
+    <h1 class="ozel">Merhaba</h1>
+    <br>
+    <h2>Deneme</h2>
+    <h3>Deneme</h3>
+    <div class="kutu">
+        <h1>selam</h1>
+        <div><h1>naber</h1></div>
+    </div>
+    <h1>kutu dışında</h1>
+    <h1>kutu dışında</h1>
+
+    <table border="1">
+        <tr>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>A</td>
+        </tr>
+    </table>
+    <br>
+    <div id="box">
+    </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+/* CSS kodlarının yazıldığı yerler
+1- Tag in kendisine 
+    Style= " " 
+    en baskındır
+2- HTML sayfasında HEAD içinde <style> etiketi içerisine
+3- Harici bir dosya olarak
+    style.css
+    en son baskındır
+
+Selectors
+1- Tag <h1>
+2- Class .
+    class=""
+3- id #
+    id= " "
+*/
