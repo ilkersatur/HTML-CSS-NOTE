@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and (max-width:500px){
+            body{
+                background-color: aqua;
+            }
+            h1{
+                color: red;
+                font-size: 100px;
+            }
+        }
+        @media screen and (min-width:501px) and (max-width:1000px){
+            body{
+                background-color: blueviolet;
+            }
+            h1{
+                color: darkslategrey;
+                font-size: 70px;
+                text-align: center;
+            }
+        }
+        @media screen and (min-width:1001px){
+            body{
+                background-color: red;
+            }
+            h1{
+                color: white;
+                font-size: 40px;
+            }
+        }
+        @media print {
+            body{
+                background-color: black;
+            }
+            h1{
+                color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Merhaba</h1>
+</body>
+</html>

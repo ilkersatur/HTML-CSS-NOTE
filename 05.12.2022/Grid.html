@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            width: 1200px;
+            height: 670px;
+            background-color: #540375;
+            display: grid;
+            /* grid-template-columns: 100px 400px 700px;
+            grid-template-rows: 150px 50px  400px 70px; */
+            grid-template-columns: 33% 33% 33%;
+            grid-template-rows: 33% 33% 33%;
+        }
+        .kutu{
+            background-color: #FF7000;
+        }
+        .kutu:nth-of-type(odd){
+            background-color:#10A19D ;
+        }
+    </style>
+</head>
+<body>
+   <div id="main">
+        <div class="kutu"></div>
+        <div class="kutu"></div>
+        <div class="kutu"></div>
+        <div class="kutu"></div>
+        <div class="kutu"></div>
+        <div class="kutu"></div>
+        <div class="kutu"></div>
+        <div class="kutu"></div>
+        <div class="kutu"></div>
+        
+   </div> 
+</body>
+</html>
